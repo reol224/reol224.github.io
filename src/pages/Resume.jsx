@@ -11,7 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 export default function Resume() {
   const [width] = useState(window.innerWidth);
-  const resume = "src/assets/resume.pdf";
+  const resume = "resume.pdf";
   const configData = getConfigData();
   return (
     <>
