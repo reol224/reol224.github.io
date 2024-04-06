@@ -1,0 +1,53 @@
+{
+  "hash": "58058806",
+  "browserHash": "3b8de49e",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "7e36152c",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "711d9964",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "1725ebc4",
+      "needsInterop": false
+    },
+    "react-icons/fa6": {
+      "src": "../../node_modules/react-icons/fa6/index.esm.js",
+      "file": "react-icons_fa6.js",
+      "fileHash": "ec25dd78",
+      "needsInterop": false
+    },
+    "react-bootstrap": {
+      "src": "../../node_modules/react-bootstrap/esm/index.js",
+      "file": "react-bootstrap.js",
+      "fileHash": "7efb1292",
+      "needsInterop": false
+    },
+    "react-pdf": {
+      "src": "../../node_modules/react-pdf/dist/esm/index.js",
+      "file": "react-pdf.js",
+      "fileHash": "70d537d1",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4XV237B4": {
+      "file": "chunk-4XV237B4.js"
+    },
+    "chunk-MDUWX4PT": {
+      "file": "chunk-MDUWX4PT.js"
+    },
+    "chunk-MOSOWOFM": {
+      "file": "chunk-MOSOWOFM.js"
+    }
+  }
+}

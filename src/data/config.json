@@ -1,0 +1,39 @@
+{
+  "job": "Backend Developer",
+  "name": "Iulia Danilov",
+  "desc": "Sheldon Cooper in the making.",
+  "aboutDesc": "ʕ⊙ᴥ⊙ʔ",
+  "email": "iulia.danilov01@gmail.com",
+  "status": "on",
+  "hireMeLink": "https://www.linkedin.com/in/iulia-danilov/",
+  "projects": [
+    {
+      "project-image-url": "https://em-content.zobj.net/source/openmoji/292/strawberry_1f353.png",
+      "project-name": "Strawberry",
+      "project-desc": "My own programming language, in Golang"
+    }
+  ],
+  "aboutData": [
+    {
+      "interests": "The Classics, Cybersecurity, Software Development",
+      "now": "Studying for OCA",
+      "from": "Romania",
+      "favouritePainting": "The adolescent Bacchus (hover over to see it)",
+      "favouritePaintingUrl": "https://artsandculture.google.com/asset/dAEBrgRq5AvsQA?hl=en"
+    }
+  ],
+  "social": [
+    {
+      "icon": "FaGithub",
+      "link": "https://github.com/reol224"
+    },
+    {
+      "icon": "FaLinkedinIn",
+      "link": "https://www.linkedin.com/in/iulia-danilov/"
+    },
+    {
+      "icon": "FaCode",
+      "link": "https://leetcode.com/reol224/"
+    }
+  ]
+}
