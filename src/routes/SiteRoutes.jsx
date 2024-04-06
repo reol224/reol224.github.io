@@ -12,9 +12,10 @@ export default function SiteRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/resume" element={<Resume />} />
+      <Route path="*" element={<Home />} />
       {/* <Route path="/projects" element={<Projects />} />
       <Route path="/products" element={<Products />} /> */}
-      <Route path="*" element={<PageNotFound />} />
+      {/* <Route path="*" element={<PageNotFound />} /> */}
     </Routes>
   );
 }
