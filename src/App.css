@@ -3,8 +3,25 @@
   padding: 0;
 }
 body {
-  background: #eceff3;
+  background: #f974d1;
   color: #353849;
-  background-image: url("https://i.pinimg.com/originals/11/68/1b/11681b40c7ae84daef0477dda290da9b.gif");
+  /* background-image: url("https://i.pinimg.com/originals/11/68/1b/11681b40c7ae84daef0477dda290da9b.gif"); */
   background-position: -100% center;
 }
+
+/*Start of Home Page*/
+.text-md.font-normal.text-gray-500.text-center.px-3 {
+  color: #9270d1;
+}
+
+.text-3xl.font-semibold {
+  color: #7036db;
+}
+/*End of Home Page*/
+
+/*Start of Profile Page*/
+.text-4xl.font-semibold.text-center.tracking-tighter {
+  color: #e0b000;
+}
+
+/*End of Profile Page*/

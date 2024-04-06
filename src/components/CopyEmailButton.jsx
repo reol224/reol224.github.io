@@ -22,7 +22,7 @@ function CopyEmailButton() {
   return (
     <button
       onClick={copyToClipboard}
-      className="gap-x-1 bg-white focus:ring-2 focus:ring-gray-300 font-medium border rounded-lg border-gray-200 first-letter:rounded-lg text-sm px-1.5 py-1.5 text-center inline-flex items-center mr-2 mb-2"
+      className="border border-[#fe3f53] bg-[#fe3f53] text-white gap-x-1 bg-white focus:ring-2 focus:ring-gray-300 font-medium border rounded-lg border-gray-200 first-letter:rounded-lg text-sm px-1.5 py-1.5 text-center inline-flex items-center mr-2 mb-2"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
