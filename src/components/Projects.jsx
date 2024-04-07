@@ -33,7 +33,7 @@ export default function Card() {
               className="gap-x-2 text-gray-900 bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
             >
               <a
-                href="https://private-user-images.githubusercontent.com/27915379/296913050-cd7d5ecf-28b3-4e0b-bcbd-a1da85a5cda7.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI0MTg3NjgsIm5iZiI6MTcxMjQxODQ2OCwicGF0aCI6Ii8yNzkxNTM3OS8yOTY5MTMwNTAtY2Q3ZDVlY2YtMjhiMy00ZTBiLWJjYmQtYTFkYTg1YTVjZGE3LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDA2VDE1NDc0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdjOTUyY2FlZTA3Y2U0N2Y0MzVhYTZiYzIwYzZmMmE3MTZhZjdlMjUzMWNkZThmZDU1ZTQ0ZGQxZWZiN2UzYTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.CysuUpdmj2QIqwQt0MK0b8OxK-IXnsfi9pAiK8u5GK8"
+                href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm0zNmQ1aHc5bXF2amY5anE1bDRvazVmM3A5aGxpeGU1NWhiYzlzaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3vwgPWF8qZznsNuSKc/giphy.gif"
                 target="_blank"
                 rel="noopener noreferrer"
               >
