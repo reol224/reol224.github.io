@@ -6,9 +6,8 @@ export default function Achievements() {
 
   return (
     <article className="markdown-document">
-      <p className="file-path">~/portfolio/achievements.md</p>
       <h1 className="markdown-title">
-        <span className="syntax-heading">#</span> Achievements
+        <span className="syntax-heading">#</span> achievements.md
       </h1>
       <p>
         Cool stuff I try to improve.

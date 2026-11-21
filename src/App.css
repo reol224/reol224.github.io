@@ -1,7 +1,7 @@
 :root {
   font-family: "IBM Plex Mono", monospace;
-  color: #d3ddd7;
-  background: #101619;
+  color: #dedbd2;
+  background: #181818;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -9,16 +9,16 @@
   font-optical-sizing: auto;
   font-weight: 400;
 
-  --desk: #101619;
-  --editor: #171f23;
-  --panel: #1d282c;
-  --line: #334147;
-  --ink: #d3ddd7;
-  --muted: #91a19a;
-  --green: #b1d49a;
-  --blue: #8ec6c2;
+  --desk: #181818;
+  --editor: #1e1e1e;
+  --panel: #282828;
+  --line: #3a3a3a;
+  --ink: #dedbd2;
+  --muted: #a4a19a;
+  --green: #a8c68b;
+  --blue: #a5bdb7;
   --amber: #e6bc76;
-  --coral: #e38e79;
+  --coral: #d99480;
 }
 
 * {
@@ -57,12 +57,11 @@ a:focus-visible {
 
 .ide-container {
   display: flex;
-  width: min(100%, 1180px);
+  width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   flex-direction: column;
   margin: 0 auto;
-  border-right: 1px solid #263238;
-  border-left: 1px solid #263238;
   background: var(--editor);
 }
 
@@ -74,10 +73,10 @@ a:focus-visible {
 
 .tab-bar {
   display: flex;
-  min-height: 46px;
+  min-height: 36px;
   overflow-x: auto;
   border-bottom: 1px solid var(--line);
-  background: #131a1d;
+  background: #242424;
   scrollbar-width: thin;
 }
 
@@ -85,29 +84,29 @@ a:focus-visible {
   display: inline-flex;
   min-width: max-content;
   align-items: center;
-  gap: 9px;
-  padding: 0 17px;
-  border-right: 1px solid #27343a;
+  gap: 8px;
+  padding: 0 14px;
+  border-right: 1px solid #363636;
   border-bottom: 2px solid transparent;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 13px;
   text-decoration: none;
 }
 
 .tab:hover {
-  background: #192226;
+  background: #2b2b2b;
   color: var(--ink);
 }
 
 .tab.active {
-  border-bottom-color: var(--amber);
-  background: var(--editor);
+  border-bottom-color: transparent;
+  background: #303030;
   color: var(--ink);
 }
 
 .tab-icon {
   color: var(--blue);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -122,45 +121,39 @@ a:focus-visible {
 }
 
 .editor-content {
-  width: min(100%, 920px);
-  margin: 0 auto;
-  padding: clamp(30px, 6vw, 66px) clamp(22px, 7vw, 76px);
+  width: 100%;
+  margin: 0;
+  padding: 24px 28px;
 }
 
 .markdown-document {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 12px;
-  line-height: 1.9;
-}
-
-.file-path {
-  margin: 0 0 25px;
-  color: var(--muted);
-  font-size: 10px;
+  max-width: none;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 .markdown-title {
-  margin: 0 0 22px;
-  color: #e6ded1;
-  font-size: clamp(21px, 4vw, 26px);
-  font-weight: 500;
+  margin: 0 0 14px;
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1.5;
 }
 
 .syntax-heading {
-  color: var(--coral);
+  color: var(--green);
 }
 
 .markdown-subtitle {
-  margin: 31px 0 13px;
-  color: #e6ded1;
-  font-size: 15px;
+  margin: 25px 0 13px;
+  color: var(--ink);
+  font-size: 16px;
   font-weight: 500;
 }
 
 .markdown-document > p {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
 }
 
 .markdown-list {
@@ -200,9 +193,8 @@ a:focus-visible {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 4px 20px;
-  padding: 15px 16px;
-  border: 1px solid var(--line);
-  background: var(--panel);
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
 }
 
 .achievement-main {
@@ -214,7 +206,7 @@ a:focus-visible {
 
 .achievement-value {
   color: var(--amber);
-  font-size: clamp(24px, 5vw, 34px);
+  font-size: clamp(23px, 4vw, 30px);
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
@@ -459,12 +451,12 @@ a:focus-visible {
 
 .status-bar {
   display: flex;
-  min-height: 31px;
+  min-height: 29px;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
   padding: 0 14px;
-  background: #263a38;
+  background: #393434;
   color: #d7e4dc;
   font-size: 9px;
 }
@@ -512,17 +504,17 @@ a:focus-visible {
 }
 
 .about-page {
-  max-width: 720px;
+  max-width: none;
 }
 
 .resume-section {
   max-width: 100%;
-  overflow-x: auto;
-  padding: 18px 0;
+  padding: 0;
 }
 
-.resume-section .resume {
-  margin: 0 auto;
+.resume-page {
+  width: 100%;
+  min-width: 0;
 }
 
 .resume-section canvas {
@@ -533,12 +525,12 @@ a:focus-visible {
 @media (max-width: 600px) {
   .tab {
     gap: 7px;
-    padding: 0 12px;
-    font-size: 10px;
+    padding: 0 11px;
+    font-size: 12px;
   }
 
   .editor-content {
-    padding: 30px 19px;
+    padding: 24px 16px;
   }
 
   .diagram-flow {
@@ -565,7 +557,18 @@ a:focus-visible {
     font-size: 8px;
   }
 
+  .status-bar-left {
+    min-width: 0;
+  }
+
+  .status-site {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .status-social {
+    flex-shrink: 0;
     gap: 11px;
   }
 

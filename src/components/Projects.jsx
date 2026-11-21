@@ -78,9 +78,8 @@ export default function Projects() {
 
   return (
     <article className="markdown-document projects-document">
-      <p className="file-path">~/portfolio/projects.md</p>
       <h1 className="markdown-title">
-        <span className="syntax-heading">#</span> Projects
+        <span className="syntax-heading">#</span> projects.md
       </h1>
       <p className="document-intro">
         A few systems I’ve been building, with notes on how they work.

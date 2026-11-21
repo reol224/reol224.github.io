@@ -9,9 +9,8 @@ export default function About() {
 
   return (
     <article className="markdown-document">
-      <p className="file-path">~/portfolio/about.md</p>
       <h1 className="markdown-title">
-        <span className="syntax-heading">#</span> About
+        <span className="syntax-heading">#</span> about.md
       </h1>
       <p>
         (Mostly) backend developer from {about.from}. I hate letting the computer win.

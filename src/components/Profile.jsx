@@ -8,10 +8,10 @@ export default function Profile() {
 
   return (
     <article className="markdown-document">
-      <p className="file-path">~/portfolio/home.md</p>
       <h1 className="markdown-title">
-        <span className="syntax-heading">#</span> {configData.name}
+        <span className="syntax-heading">#</span> home.md
       </h1>
+      <p>{configData.name}</p>
       <p>
         Backend developer from {configData.aboutData[0].from}, interested in the
         systems behind software.
