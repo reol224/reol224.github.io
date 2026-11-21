@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-    <>
-      <h1>Projects</h1>
-    </>
-  );
+import ProjectList from "../components/Projects";
+
+export default function Projects() {
+  return <ProjectList />;
 }

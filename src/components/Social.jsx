@@ -1,46 +1,36 @@
-import {
-  FaXTwitter,
-  FaInstagram,
-  FaDribbble,
-  FaCode,
-  FaGithub,
-  FaLinkedinIn,
-} from "react-icons/fa6";
-import configData from "../data/config.json";
+import { FaBookOpen, FaCode, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { getConfigData } from "../data/configReader";
+
+const socialPlatforms = {
+  FaCode: { label: "LeetCode", Icon: FaCode },
+  FaGithub: { label: "GitHub", Icon: FaGithub },
+  FaLinkedinIn: { label: "LinkedIn", Icon: FaLinkedinIn },
+  FaBookOpen: { label: "Goodreads", Icon: FaBookOpen },
+};
 
 export default function Social() {
-  const socialLinks = configData.social;
+  const { social } = getConfigData();
 
   return (
-    <>
-      <div className="px-2">
-        <div className="flex items-center justify-between px-7 py-7 bg-gray-100 rounded-lg">
-          <div className="font-medium text-lg flex items-center gap-x-2">
-            <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
-            Follow me!
-          </div>
-          <div className="flex gap-x-1">
-            {socialLinks.map((socialLink, index) => {
-              const iconMap = {
-                FaCode,
-                FaGithub,
-                FaLinkedinIn,
-              };
-              const IconComponent = iconMap[socialLink.icon];
+    <nav className="status-social" aria-label="Social links">
+      {social.map((socialLink) => {
+        const platform = socialPlatforms[socialLink.icon];
+        if (!platform) return null;
 
-              return (
-                <a
-                  key={index}
-                  href={socialLink.link}
-                  className="bg-white p-2 rounded-full duration-300 border-2 border-gray-100 hover:border-gray-200 drop-shadow-sm"
-                >
-                  {<IconComponent size={20} />}
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-    </>
+        const { Icon, label } = platform;
+        return (
+          <a
+            key={socialLink.icon}
+            href={socialLink.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+          >
+            <Icon aria-hidden="true" size={13} />
+            <span>{label}</span>
+          </a>
+        );
+      })}
+    </nav>
   );
 }

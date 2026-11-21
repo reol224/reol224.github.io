@@ -8,17 +8,40 @@
   "hireMeLink": "https://www.linkedin.com/in/iulia-danilov/",
   "projects": [
     {
-      "project-image-url": "https://em-content.zobj.net/source/openmoji/292/strawberry_1f353.png",
       "project-name": "Strawberry",
-      "project-desc": "My own programming language, in Golang"
+      "project-type": "Language tooling",
+      "project-desc": "A small interpreter written in Go.",
+      "project-note": "The playground runs the WebAssembly interpreter in the browser; it does not send programs to a server.",
+      "project-stack": ["Go", "WebAssembly"],
+      "project-source-url": "https://github.com/reol224/strawberry",
+      "project-demo-url": "https://strawberry-main-eight.vercel.app/",
+      "project-visual": "strawberry"
+    },
+    {
+      "project-name": "Migra",
+      "project-type": "Data migration",
+      "project-desc": "Shopify data tool for migrations from other POS', tested with actual clients. On data sets of a couple thousand customers/products, it reduced the migration time to the next hour.",
+      "project-note": "Halves the migration time, allowed me to drink more coffee..",
+      "project-stack": ["React", "TypeScript", "Shopify"],
+      "project-source-url": "https://github.com/reol224/Migra",
+      "project-visual": "migra"
+    },
+    {
+      "project-name": "Komra",
+      "project-type": "Security operations",
+      "project-desc": "SOC for SMBs.",
+      "project-note": "Made mostly for self-surveillance and a work-in-progress.",
+      "project-stack": ["Next.js", "Supabase", "Typescript"],
+      "project-source-url": "https://github.com/reol224/Komra",
+      "project-visual": "komra"
     }
   ],
   "aboutData": [
     {
-      "interests": "The Classics, Cybersecurity, Software Development",
-      "now": "Studying for OCA",
+      "interests": "cybersecurity, GIS, reading, quantum computing",
+      "now": "Aspiring Master's student",
       "from": "Romania",
-      "favouritePainting": "The adolescent Bacchus (hover over to see it)",
+      "favouritePainting": "The adolescent Bacchus",
       "favouritePaintingUrl": "https://artsandculture.google.com/asset/dAEBrgRq5AvsQA?hl=en"
     }
   ],
@@ -33,7 +56,21 @@
     },
     {
       "icon": "FaCode",
-      "link": "https://leetcode.com/reol224/"
+      "link": "https://leetcode.com/reol224/",
+      "achievement": {
+        "value": 1611,
+        "note": "Contest rating"
+      }
+    },
+    {
+      "icon": "FaBookOpen",
+      "link": "https://www.goodreads.com/user/show/138443588-iulia-danilov",
+      "achievement": {
+        "value": "About 300",
+        "label": "books read",
+        "note": "Goodreads read shelf count.",
+        "checkedOn": "2026-11-21"
+      }
     }
   ]
 }

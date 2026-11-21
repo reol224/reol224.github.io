@@ -1,19 +1,21 @@
+import { getConfigData } from "../data/configReader";
+import Social from "./Social";
+
 export default function Footer() {
+  const isAvailable = getConfigData().status === "on";
+
   return (
-    <>
-      <div className="px-2 py-2">
-        <div className="flex items-center justify-center text-center px-7 py-7 bg-gray-100 rounded-lg">
-          <p className="w-full">
-            © 2025 Iulia Danilov{" "}
-            <a
-              href="https://github.com/reol224"
-              className="font-medium underline"
-            >
-              GitHub
-            </a>
-          </p>
-        </div>
+    <footer className="status-bar">
+      <div className="status-bar-left">
+        <span className="status-site">What are you doing down here</span>
+        <span className="status-divider" aria-hidden="true">
+          /
+        </span>
+        <span className={`status-availability${isAvailable ? "" : " busy"}`}>
+          {isAvailable ? "Available for work" : "Currently busy"}
+        </span>
       </div>
-    </>
+      <Social />
+    </footer>
   );
 }

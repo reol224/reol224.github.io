@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Row } from "react-bootstrap";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -13,6 +13,7 @@ export default function Resume() {
 
   return (
     <Container fluid className="resume-section">
+      <p className="file-path">~/portfolio/resume.pdf</p>
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col flex-col-reverse md:flex md:flex-row md:items-center justify-center py-8">
           <div className="flex items-center text-center md:text-justify justify-center md:justify-normal">
