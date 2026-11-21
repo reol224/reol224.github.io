@@ -1,7 +1,7 @@
 :root {
   font-family: "IBM Plex Mono", monospace;
   color: #dedbd2;
-  background: #181818;
+  background: #1d2021;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -9,8 +9,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
 
-  --desk: #181818;
-  --editor: #1e1e1e;
+  --desk: #1d2021;
+  --editor: #1d2021;
   --panel: #282828;
   --line: #3a3a3a;
   --ink: #dedbd2;
@@ -76,7 +76,7 @@ a:focus-visible {
   min-height: 36px;
   overflow-x: auto;
   border-bottom: 1px solid var(--line);
-  background: #242424;
+  background: var(--editor);
   scrollbar-width: thin;
 }
 
@@ -88,9 +88,12 @@ a:focus-visible {
   padding: 0 14px;
   border-right: 1px solid #363636;
   border-bottom: 2px solid transparent;
-  color: var(--muted);
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 400;
   text-decoration: none;
+  font-family: "Berkeley Mono", "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
+  line-height: 21px;
+  color: #bdae93;
 }
 
 .tab:hover {
@@ -100,19 +103,17 @@ a:focus-visible {
 
 .tab.active {
   border-bottom-color: transparent;
-  background: #303030;
+  background: var(--editor);
   color: var(--ink);
 }
 
 .tab-icon {
   color: var(--blue);
-  font-size: 12px;
   font-weight: 600;
 }
 
 .tab-icon-pdf {
   color: var(--coral);
-  font-size: 8px;
 }
 
 .editor-area {
